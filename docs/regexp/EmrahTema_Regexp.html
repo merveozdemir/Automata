@@ -262,9 +262,9 @@ function showText(selected) {
 		printt = "<b>Optional Character</b><br>"+
 		"Sometimes we need to write a pattern that has optional characters inside it. In the Regular Expressions ? (question "+
 		"mark) is used as the optional character, so it makes optional any character or expression on the left of it.<br><br>"+
-		"Example pattern: <b>g?G?elecek(tir)?</b><br>"+
+		"Example pattern: <b>[gG]elecek(tir)?</b><br>"+
 		"Matches: <i><font color=\"#F60\">Gelecek</font> biz istemesek de <font color=\"#F60\">gelecektir</font>.</i><br>";
-		pat = "g?G?elecek(tir)?";
+		pat = "[gG]elecek(tir)?";
 		txt = "Gelecek biz istemesek de gelecektir.";
 		out = "<font color=\"#F60\">Gelecek</font> biz istemesek de <font color=\"#F60\">gelecektir</font>.";
 	}
