@@ -28,20 +28,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   }
   .cells-container .cell {
     display: flex;
-    width: 52px;
-    min-width: 52px;
-    height: 52px;
-    border-radius: 2px;
+    width: 4.5vw;
+    height: 4.5vw;  
+    border-radius: 2.5vw;
     background-color: #fff;
     box-sizing: border-box;
     transition: box-shadow 600ms, background-color 600ms;
     margin: .3em;
     cursor: default;
-    box-shadow: 0 0.5px 5px 0 rgba(0, 0, 0, 0.12), 0 0.5px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.05vw 0.4vw 0 rgba(0, 0, 0, 0.12), 0 0.5px 5px 0 rgba(0, 0, 0, 0.12);
   }
   .cells-container .cell .value {
     margin: auto;
-    font-size: 2em;
+    font-size: 3vw;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -63,8 +62,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     content: '';
     border-radius: 0px 0px 2px 2px;
   
-    height: 10px;
-    top: 42px;
+    height: 1vw;
+    top: 3.5vw;
     box-shadow: 0 0.5px 5px 0 rgba(1, 0, 0, 0.12), 0 0.5px 5px 0 rgba(1, 0, 0, 0.12);
   }
   .cells-container .cell.selected::after {
@@ -73,59 +72,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     right: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    border-radius: 2px 2px 0px 0px;
+    border-radius: 2.25vw 2.25vw 0px 0px;
     display: block;
     content: '';
-    height: 10px;
+    height: 1vw;
     box-shadow: 0 0.5px 5px 0 rgba(1, 0, 0, 0.12), 0 0.5px 5px 0 rgba(1, 0, 0, 0.12);
   }
 
-/* Fixed size for all Devices which its smaller than 900px */
-@media only screen and (max-width: 900px) {
-  .cells-container .cell {
-    width: 25px;
-    min-width: 25px;
-    height: 25px;
-    border-radius: 2px;
-    
-  }
-  .cells-container .cell .value {
-    font-size: 1em;
-  }
-
-  .cells-container .cell.selected::before {
-    border-radius: 0px 0px 2px 2px;
-    height: 5px;
-    top: 21px;
-  }
-  .cells-container .cell.selected::after {
-
-border-radius: 1px 1px 0px 0px;
-
-height: 5px;
-}
-} 
-/* Fixed size for all Devices which its smaller than 600px */
-@media only screen and (max-width: 600px) {
-  .cells-container .cell {
-    width: 15px;
-    min-width: 15px;
-    height: 15px;
-    border-radius: 2px;
-  }
-  .cells-container .cell .value {
-    font-size: 0.5em;
-  }
-
-  .cells-container .cell.selected::before {
-    border-radius: 0px 0px 2px 2px;
-    height: 2.5px;
-    top: 10px;
-  }
-  .cells-container .cell.selected::after {
-border-radius: 0.5px 0.5px 0px 0px;
-height: 2.5px;
-}
+.btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 
@@ -140,7 +97,7 @@ height: 2.5px;
     onclick="myFunction()" 
     title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#history" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Breif history</a>
+    <a href="#history" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Brief history</a>
     <a href="#hWorks" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">How it Works</a>
     <a href="#funExplained" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">How to have fun</a>
     <a href="#funArea" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Fun area</a>
@@ -151,7 +108,7 @@ height: 2.5px;
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#history" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" >Breif history</a>
+        <a href="#history" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" >Brief history</a>
         <a href="#hWorks" class="w3-bar-item w3-button  w3-padding-large" onclick="myFunction()" >How it Works</a>
         <a href="#funExplained" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" >How to have fun</a>
         <a href="#funArea" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" >Fun area</a>
@@ -162,7 +119,7 @@ height: 2.5px;
 <!-- Header -->
 <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo">Turing Machine Simulator</h1>
-  <p class="w3-xlarge">By abdurrahman Rajab</p>
+  <p class="w3-xlarge">By Abdurrahman Rajab</p>
   
 </header>
 
@@ -172,16 +129,16 @@ height: 2.5px;
     <div class="w3-twothird">
       <h1>Brief history</h1>
       <h5 class="w3-padding-32">
-            Turing machine is a logical machine invented by   <strong>Alan Turing</strong> , 
-            at 1936 when he wrote a paper about a machine with a long tape which write ,
-            read and alter symbols to define and solve a specific problem , 
-            for some people he is the father of computers and computing .       
+            Turing machine is a logical machine invented by   <strong>Alan Turing</strong>, 
+            at 1936 when he wrote a paper about a machine with a long tape which could write,
+            read and alter symbols to define and solve a specific problem, 
+            for some people he is the father of computers and computing.       
          </h5>
       <p class="w3-text-grey">
-            It all started at 1930 before there were computers , 
+            It all started at 1930 before there were computers, 
             Alan Turing machine is based on Finite Automata were studeid by a number of 
-            researchers in the 1940's and 1950's .These automata origanlly proposed to model brain function , it happened to be usefull for 
-            alot of applications .
+            researchers in the 1940's and 1950's.These automata origanlly were proposed to model brain function, it happened to be useful for 
+            a lot of applications.
     </p>
     </div>
     <br>
@@ -204,9 +161,9 @@ height: 2.5px;
     <div class="w3-twothird">
       <h1>How it works </h1>
       <h5 class="w3-padding-32">
-        The Turing Machine uses a set of rules to decide what to do and how to behave , 
-        which we can show it with this Notation <br>
-        Turing machine = ( Q , &Sigma; , &Gamma; , &delta; ,  q<SUB>0</SUB> , B , F ) 
+        The Turing Machine uses a set of rules to decide what to do and how to behave, 
+        which we can show with this Notation <br>
+        Turing machine = ( Q, &Sigma;, &Gamma;, &delta;,  q<SUB>0</SUB>, B, F ) 
 
         </h5>
 
@@ -214,11 +171,11 @@ height: 2.5px;
          Components meaning :
         <br>Q 	&#160;: Finite set of states of the finite control
         <br> &Sigma; 	&#160;: The finite state of input symbols
-        <br> &Gamma;  	&#160;: The complte set of tape Symbols , &Sigma; is always a subset of &Gamma;
+        <br> &Gamma;  	&#160;: The complte set of tape Symbols, &Sigma; is always a subset of &Gamma;
         <br> &delta;     	&#160; : The transition function 
-        <br> q<SUB>0</SUB> : The start state , a member of Q , in which the finite control is found initially.
+        <br> q<SUB>0</SUB> : The start state, a member of Q, in which the finite control is found initially.
         <br> B  	&#160;: The blank Symbol
-        <br> F  	&#160;: The set of final or accepting states , subset of Q 
+        <br> F  	&#160;: The set of final or accepting states, subset of Q 
          
     </p>
     </div>
@@ -231,13 +188,13 @@ height: 2.5px;
             <h1>How to have fun</h1>
             <h5 class="w3-padding-32">
                    <!-- TEXT ONE BLACK  -->
-                   At this page you will find an example taken from <a href='http://infolab.stanford.edu/~ullman/ialc.html'>Automata theory book</a>  at page 322. 
+                   At this page you will find an example taken from page 322 of <a href='http://infolab.stanford.edu/~ullman/ialc.html'>Automata theory book</a>. 
                    which it used to accept the langauges <math > {0 <sup>n</sup> 1 <sup>n</sup> | n &ge; 1} </math>
                </h5>
             <p class="w3-text-grey">
             <!-- text 2 Gey -->
-                for the machine all the Components is fixed you cant change it ,
-                <br> Except (&sigma;) :  you can input alphabet to try it if it works for the machine or not , 
+                for the machine all the Components is fixed you cant change it,
+                <br> Except (&sigma;) :  you can input alphabet to try it if it works for the machine or not, 
                 <br> you have two examples (rejected and accepted ) at the examlpe box, when you choose one <br>
                 it will show the transmition table and the input at the tape which it will use with the transmition,  
             <br> have fun !
@@ -286,13 +243,11 @@ height: 2.5px;
            
 
                 <div class="btns">
-                  <button id="load-inputs" class="w3-third w3-button w3-white w3-round-xlarge w3-border w3-border-blue" >load</button>
-                  <button id="step" class="w3-third w3-button w3-white w3-round-xlarge w3-border w3-border-blue">step</button>
-                
-                  <button id="run" class="w3-third w3-button w3-white w3-round-xlarge w3-border w3-border-blue">run</button>
+                  <button id="load-inputs" class="w3-button w3-white w3-round-xlarge w3-border w3-border-blue">load</button>
+                  <button id="step" class="w3-button w3-white w3-round-xlarge w3-border w3-border-blue" >step</button>
+                  <button id="run" class="w3-button w3-white w3-round-xlarge w3-border w3-border-blue" >run</button>
                 </div>
-                <div>
-                  <br> &#160;
+
 
                 </div>
                 <div class="w3-content">
@@ -308,26 +263,26 @@ height: 2.5px;
                             </tr>
                             <tr>
                                 <td>0</td>
-                                <td>(q<SUB>1</SUB> , X, R)</td>
+                                <td>(q<SUB>1</SUB>, X, R)</td>
                                 <td></td>
                                 <td></td>
-                                <td>(q<SUB>3</SUB> , Y, R)</td>
+                                <td>(q<SUB>3</SUB>, Y, R)</td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>1</td>
-                                <td>(q<SUB>1</SUB> , 0, R)</td>
-                                <td>(q<SUB>2</SUB> , Y, L)</td>
+                                <td>(q<SUB>1</SUB>, 0, R)</td>
+                                <td>(q<SUB>2</SUB>, Y, L)</td>
                                 <td></td>
-                                <td>(q<SUB>1</SUB> , Y, R)</td>
+                                <td>(q<SUB>1</SUB>, Y, R)</td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>(q<SUB>2</SUB> , 0, L)</td>
+                                <td>(q<SUB>2</SUB>, 0, L)</td>
                                 <td></td>
-                                <td>(q<SUB>0</SUB> , X, R)</td>
-                                <td>(q<SUB>2</SUB> , Y, L)</td>
+                                <td>(q<SUB>0</SUB>, X, R)</td>
+                                <td>(q<SUB>2</SUB>, Y, L)</td>
                                 <td></td>
                             </tr>
                             <tr>
@@ -335,8 +290,8 @@ height: 2.5px;
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>(q<SUB>3</SUB> , Y, R)</td>
-                                <td>(q<SUB>4</SUB> , B, R)</td>
+                                <td>(q<SUB>3</SUB>, Y, R)</td>
+                                <td>(q<SUB>4</SUB>, B, R)</td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -369,8 +324,8 @@ height: 2.5px;
               <p class="w3-left-align">
                     <!-- Use IT FOR NOTES AND FURTHER STUFF add Area for Fun -->
                     This web page built as term project for BLM320E at
-                    <a href="http://www.fatihsultan.edu.tr" class="button">fatih sultan mehmet university turkey</a> <br>
-                    ,which given by <a href="http://mimoza.marmara.edu.tr/~maeyler/" class="button">professor Mehmet akif eyler</a>,<br>
+                    <a href="http://www.fatihsultan.edu.tr" class="button">fatih sultan mehmet university turkey</a> <br>,
+                    which given by <a href="http://mimoza.marmara.edu.tr/~maeyler/" class="button">professor Mehmet akif eyler</a>,<br>
 
                     by abdurrahman RAJAB  <br>
                     Used Automata theroy book as reference <br>
@@ -419,6 +374,8 @@ class TuringMachine {
     this.countOfCells = 15;
     this.indexOfCurrentCell = null;
     this.currentState = 1;
+    this.Coloumn=1;
+    this.row=1;
     // you can hide it by using this .. .
     //.style.display = 'none';
     // accepted
@@ -441,11 +398,11 @@ this.FirstExample();
     this.speed = 1000;
     this.countOfStates = 5;
     this.states = [
-      ['x>2',''   ,''   ,'y>4',''   ],
-      ['0>2','y<3',''   ,'y>2',''   ],
-      ['0<3',''   ,'x>1','y<3',''   ],
-      [''   ,''   ,''   ,'y>4','_>0'],
-      [''   ,''   ,''   ,''   ,''   ],
+      ['x>2','','','y>4',''   ],
+      ['0>2','y<3','','y>2',''   ],
+      ['0<3','','x>1','y<3',''   ],
+      ['','','','y>4','_>0'],
+      ['','','','',''   ],
      ];
      document.getElementById('init-value-input').value = this.initValue;  
      document.getElementById('time-input').value = this.speed;
@@ -469,13 +426,13 @@ this.FirstExample();
         this.speed = 1000;
         this.countOfStates = 7;
         this.states = [
-          ['_>2','_>6' ,''    ],
-          ['0>2','1>3' ,''    ],
-          ['1<4','1>3' ,'_<5' ],
-          ['0<4','1<4' ,'_>1' ],
-          ['0<5','_<5' ,'0>7' ],
-          ['_>6','_>6' ,'_>7' ],
-          [''   ,''    ,''    ],
+          ['_>2','_>6',''    ],
+          ['0>2','1>3',''    ],
+          ['1<4','1>3','_<5' ],
+          ['0<4','1<4','_>1' ],
+          ['0<5','_<5','0>7' ],
+          ['_>6','_>6','_>7' ],
+          ['','',''    ],
          ];
          document.getElementById('init-value-input').value = this.initValue;  
          document.getElementById('time-input').value = this.speed;
@@ -496,6 +453,7 @@ this.FirstExample();
   }
   
   createTape () {
+
     console.log('Create tape');
     if (this.initValue.length <= this.indexOfCurrentCell + 1) {
       this.clearTape();
@@ -553,6 +511,7 @@ this.FirstExample();
   }
   
   goRight() {
+
     this.selectCellOfTape(this.indexOfCurrentCell + 1)
   }
   
@@ -575,12 +534,13 @@ this.FirstExample();
 
   }
   load(initValue = '0011',speed = 1000) {
-   
+
     this.selectCellOfTape(10);
     this.currentState=1;
     this.initValue = initValue;
     this.speed = speed;
     console.log(`initValue: ${this.initValue} speed:${this.speed}`)
+
     this.createTape();
   }
   examplesBox(){
@@ -609,20 +569,46 @@ this.FirstExample();
     }
 
   }
+  setTableBorderColour(Coloumn,row){
+    console.log(this.Coloumn, this.row);
+    this.clearTableBorder(this.Coloumn, this.row);
+    var talbe = document.getElementById("table_example1");
 
+      var trs = talbe.getElementsByTagName("tr")[Coloumn].getElementsByTagName("td")[row];
+    this.Coloumn= Coloumn;
+    this.row = row;
+        trs.style.border = "solid #FF0000"; 
+  }
+
+  clearTableBorder(Coloumn,row){
+    var talbe = document.getElementById("table_example1");
+    var trs = talbe.getElementsByTagName("tr")[Coloumn].getElementsByTagName("td")[row];
+    console.log("clear data "+ Coloumn  + " + "+ row);
+    trs.style.border = ""; 
+  }
 
   
   step() {
     let currentValue = this.read();
-   
+    console.log("current value = "+currentValue);
     let tapeLetter = currentValue ? this.alphabet.indexOf(currentValue) : this.alphabet.length;
+    var coloumn = this.currentState;
+    var row = tapeLetter+1;
+    console.log("current row = "+row);
+    console.log("current coloumr = "+coloumn);
     try {
       
-  
-    const currentStatement = this.states[this.currentState - 1][tapeLetter];
+
+      const currentStatement = this.states[this.currentState - 1][tapeLetter];
+      this.setTableBorderColour(coloumn, row);
+
     
     //const currentStatement = this.states[this.currentState - 1][tapeLetter];
     if (this.isRunning) {
+
+
+
+
       const letter = currentStatement[0];
       this.write(letter === '_' ? '' : letter);
       const command = currentStatement[1];
@@ -636,25 +622,47 @@ this.FirstExample();
           break;
         }
       }
+
+
       const state = currentStatement.slice(2);
       if (state === '0') {
         this.finish();
 
         alert("Accepted.");
+        this.clearLast();
       } else {
         this.currentState = state;
+        this.border();
+
       }
+      
     } else {
       this.isRunning = true;
-    } 
-  } catch (error) {
-  
+    }
 
+ 
+  } catch (error) {
+    console.log(error);
     alert('Rejected..Try an other value');
     this.finish();
   }
 
   }
+ border(){
+  let currentValue = this.read();
+    console.log("current value = "+currentValue);
+    let tapeLetter = currentValue ? this.alphabet.indexOf(currentValue) : this.alphabet.length;
+    var coloumn = this.currentState;
+    var row = tapeLetter+1;
+    this.setTableBorderColour(coloumn, row);
+
+
+ }
+clearLast(){
+this.clearTableBorder(this.Coloumn, this.row);
+
+}
+
   finish(){
     this.isRunning = false;
     this.currentState = null;
@@ -664,11 +672,17 @@ this.FirstExample();
     this.loadInput();
   }
   loadInput(){
-    tm.load(document.getElementById('init-value-input').value , 
+    this.clearLast();
+    tm.load(document.getElementById('init-value-input').value, 
     document.getElementById('time-input').value);
 
+
+  }
+  loadTime(){
+    this.speed = document.getElementById('time-input').value;
   }
   run() {
+    this.loadTime();
     this.step();
     this.lastTimer = setTimeout(() => {
       if (this.isRunning) {
@@ -748,6 +762,8 @@ tm.load();
           x.className = x.className.replace(" w3-show", "");
       }
   }
+
+
   </script>
 </body>
 
