@@ -73,7 +73,7 @@ And there is multiple move choices for p states b symbol. In DFA, it's input sym
 
 > Open the application that i have made.. And select the first regex which is (ab + abb)*.When you select the regex, you can see the NFA diagram at below.
 
- [Click here to download the application](https://github.com/EnesKy/Automata/raw/master/docs/fa/NFAtoDFA.jar)
+ [Click here to download the application](https://github.com/EnesKy/Automata/raw/master/docs/fa/EnesKy_NFAtoDFA.jar)
 
  ![](https://lh3.googleusercontent.com/a3izzk9VwED5ueMPYQP1upryyO0xDpQ4gfiGQfTQY_YOPZKs4NV5fmhO8OhulDQ4D7V4escyhTAe "NFA Diagram")
 
