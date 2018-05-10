@@ -30,7 +30,7 @@ A=(Q, ∑, δ, s, F)
 
 -  F={c}
 
-# TRANSITION MATRIS
+# TRANSITION MATRIX
 
 ![enter image description here](https://lh3.googleusercontent.com/-StQ-Ie2hEbzQpEA9548b5JRo5x5i8atumZHf8OIcuYoSJhcJ7Qui97INyNQbQdD_bZ2AN7TGy-Q "Transition Matris")
 
