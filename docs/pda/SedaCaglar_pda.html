@@ -19,14 +19,15 @@ Pushdown automata are computational models that can do more than a finite state 
 <h4> Definition of the pushdown automaton </h4>
 Our formal notation for a pushdown automaton involves seven componenents.The specification of a PDA:<br>
 <strong><h4 style="text-align:center;">	P = (Q,∑,Γ,δ,qo,Zo,F ) </h4>	</strong><br>
-We can also write shorter, like this:<br>
-<strong><h4 style="text-align:center;">	P = (∑,Γ,δ,Zo) </h4>	</strong><br>
 <font color="red">The components have the following meanings:  </font><br>
 <ul >
-<li>  <b>∑  :</b>  Input alphabet</li>  
-<li>  <b>Γ  :</b>  Stack symbol</li>  
-<li>  <b>δ  :</b>  Transition function</li>  
-<li>  <b>Zo :</b>  Start symbol</li>  
+<li>  <b>Q  :</b>  Set of states </li>   
+<li>  <b>∑  :</b>  Input alphabet </li>   
+<li>  <b>Γ  :</b>  Stack symbol </li>  
+<li>  <b>δ  :</b>  Transition function </li>  
+<li>  <b>qo :</b>  Initial state </li>    
+<li>  <b>Zo :</b>  Start symbol </li>   
+<li>  <b>F  :</b>  Set of final states </li>  
 </ul >
 δ = ∑ x Γ -> Γ*  : It makes it possible not to write anything in the stack.We will look at the situation, look at the incoming input, pop or push according to it.<br>
 A pushdown automaton has <strong>three components  :</strong>
