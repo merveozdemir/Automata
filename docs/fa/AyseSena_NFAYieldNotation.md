@@ -82,7 +82,7 @@ So this string is reject in this automata.
 
 If do you want to try some strings in this automata please
 
-[enter link](https://github.com/AyseSenaFeyiz/Automata/tree/master/docs/fa/AyseSena_NFAYieldNotation.jar)
+[open the program](https://github.com/AyseSenaFeyiz/Automata/tree/master/docs/fa/AyseSena_NFAYieldNotation.jar)
 
 ![enter image description here](https://lh3.googleusercontent.com/zFDBrEizuKSf7f-W65cpna5Sq3c_geDXGfsCIeGfdMu7HVjufVAobIuBtfBOcKb-N4ix8qmWRzPQ)
 
